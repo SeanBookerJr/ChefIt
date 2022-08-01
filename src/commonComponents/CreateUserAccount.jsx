@@ -2,11 +2,14 @@ import React from 'react';
 
 function CreateUserAccount() {
   return (
-    <form className="row g-3">
-      <div className="col-md-6">
-        <label htmlFor="fName" className="form-label">
-          <p>First Name:</p>
-        </label>
+    <div className="signupContainer">
+      <div className='row'>
+        <div className="col-md-6 off-md-3">
+          <div className='signup-form'>
+    <form action="" className="mt-5 border p-4 bg-light shadow">
+      <div className="row">
+      <div className="mb-3">
+        <label className="form-label"> First Name</label>
         <input
           required
             //   onChange={handleInput}
@@ -14,12 +17,11 @@ function CreateUserAccount() {
           type="text"
           className="form-control"
           id="fName"
+          placeholder='First Name'
         />
       </div>
-      <div className="col-md-6">
-        <label htmlFor="lName" className="form-label">
-          <p>Last Name:</p>
-        </label>
+      <div className="mb-3">
+        <label className="form-label">Last Name</label>
         <input
           required
             //   onChange={handleInput}
@@ -27,11 +29,12 @@ function CreateUserAccount() {
           type="text"
           className="form-control"
           id="lName"
+          placeholder='Last Name'
         />
       </div>
-      <div className="col-md-12">
+      <div className="mb-3">
         <label htmlFor="birthday" className="form-label">
-          Birthday:
+          Birthday
         </label>
         <input
           required
@@ -42,7 +45,7 @@ function CreateUserAccount() {
           id="birthday"
         />
       </div>
-      <div className="col-md-12">
+      <div className="mb-3">
         <label htmlFor="username" className="form-label">
           Username:
         </label>
@@ -53,9 +56,10 @@ function CreateUserAccount() {
           type="text"
           className="form-control"
           id="username"
+          placeholder='Username'
         />
       </div>
-      <div className="col-md-12">
+      <div className="mb-3">
         <label htmlFor="password" className="form-label">
           Password:
         </label>
@@ -66,9 +70,10 @@ function CreateUserAccount() {
           type="password"
           className="form-control"
           id="password"
+          placeholder='Password'
         />
       </div>
-      <div className="col-md-12">
+      <div className="mb-3">
         <label htmlFor="picture" className="form-label">
           Profile Picture:
           {' '}
@@ -79,9 +84,10 @@ function CreateUserAccount() {
           type="text"
           className="form-control"
           id="picture"
+          placeholder='Url link'
         />
       </div>
-      <div className="col-md-12">
+      <div className="mb-3">
         <label htmlFor="bioform" className="form-label">
           Description:
           {' '}
@@ -92,12 +98,18 @@ function CreateUserAccount() {
           type="text"
           className="form-control"
           id="bioform"
+          placeholder='Write bio here...'
         />
       </div>
       <button type="submit" className="btn btn-success btn-lg btn-block">
         Create Account
       </button>
+      </div>
     </form>
+    </div>
+    </div>
+    </div>
+    </div>
   );
 }
 
